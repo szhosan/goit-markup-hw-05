@@ -68,7 +68,7 @@
       <section class="main-header-section">
         <div class="container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn" type="button">Заказать услугу</button>
+          <button class="btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -134,13 +134,15 @@
           <ul class="list our-works-list">
             <li class="our-works-list-item">
               <img src="./images/example1.jpg" alt="Фото сайта" width="370" />
-            </li>
+              <h3 class="our-works-ttl">Десктопные приложения</h3>
+              </li>
             <li class="our-works-list-item">
               <img
                 src="./images/example2.jpg"
                 alt="Фото приложения"
                 width="370"
               />
+              <h3 class="our-works-ttl">Мобильные приложения</h3>
             </li>
             <li class="our-works-list-item">
               <img
@@ -148,6 +150,7 @@
                 alt="Фото приложения на планшете"
                 width="370"
               />
+              <h3 class="our-works-ttl">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -539,5 +542,16 @@
         </address>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-modal-btn" data-modal-close>
+          <svg class="close-icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-close-icon"></use>
+          </svg>
+        </button>
+      </div>      
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
