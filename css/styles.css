@@ -165,10 +165,13 @@ img {
 .header-cont-icon {
   margin-right: 10px;
   fill: var(--secondary-text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts:hover .header-cont-icon {
   fill: var(--accent-color);
+
 }
 
 .active-link::after {
@@ -364,6 +367,7 @@ img {
 
 .s-l-list-item-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .s-l-list-item-link:hover .s-l-list-item-icon,
@@ -444,6 +448,7 @@ img {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients-link:hover,
@@ -453,6 +458,7 @@ img {
 
 .our-clients-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients-link:hover .our-clients-icon {
